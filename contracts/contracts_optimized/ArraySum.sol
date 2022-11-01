@@ -9,12 +9,9 @@ contract OptimizedArraySum {
         array = _array;
     }
 
-    function getArraySum() external view returns (uint256) {
-        uint256 sum;
+    function getArraySum() external view returns (uint256 sum) {
         for (uint256 i = 0; i < array.length; i++) {
             sum += array[i];
         }
-
-        return sum;
     }
 }
